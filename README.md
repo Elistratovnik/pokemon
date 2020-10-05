@@ -1,3 +1,7 @@
+# https://elistratovnik.github.io/pokemon/
+## Для навигации используйте "покебол" в верхнем левом углу экрана
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
