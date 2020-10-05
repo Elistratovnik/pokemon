@@ -1,0 +1,51 @@
+.menu {
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 40px;
+    box-shadow: 0 0 4px 2px black;
+    display: flex;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, red 29px, white 30px);
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 24px;
+    &::after{
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 24px;
+      left: 24px;
+      width: 12px;
+      height: 12px;
+      background-color: white;
+      box-shadow: 0 0 2px 1px black;
+      border-radius: 50%;
+    }
+    &__link {
+      text-decoration: none;
+      color: orange;
+      font-family: 'Pokemon';
+      font-size: 24px;
+      letter-spacing: 2px;
+      text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+}
+
+
+@media (max-width: 1024px) {
+  .menu {
+    left: 0;
+    padding: 0 20px 0 30px;
+    &__link{
+      font-size: 16px;
+    }
+  }
+}
+

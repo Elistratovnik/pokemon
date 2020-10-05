@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+.welcome {
+  font-family: 'Pokemon';
+  border: 1px solid orangered;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $pd-xxl;
+  box-sizing: border-box;
+  border-radius: 8px;
+  &__title{
+    font-size: $fs-xxl;
+    letter-spacing: 5px;
+    color: goldenrod;
+    margin: 24px;
+  }
+  &__subtitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: $fs-md;
+    color: white;
+    text-align: center;
+  }
+  &__button {
+    text-transform: uppercase;
+    background-color: goldenrod;
+    padding: 18px 48px;
+    border-radius: 32px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+@font-face {
+	font-family: 'Pokemon';
+	src: url('../fonts/Pokemon.ttf');
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    padding: $pd-md;
+    &__title {
+      font-size: $fs-md;
+    }
+    &__subtitle {
+      font-size: $fs-sm;
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .welcome {
+    padding: $pd-sm;
+  }
+}
+
+

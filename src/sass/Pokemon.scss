@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.pokemon {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 18px;
+  &__image {
+    width: 400px;
+    object-fit: cover;
+  }
+  &__description {
+    padding: 0;
+    text-align: center;
+    flex-grow: 1;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__char {
+    text-transform: uppercase;
+    color: gold;
+    font-size: $fs-md;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .pokemon {
+    padding-left: 0;
+    &__image {
+      width: 200px;
+    }
+    &__char {
+      font-size: $fs-sm
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .pokemon {
+    &__image {
+      width: 150px;
+    }
+  }
+}

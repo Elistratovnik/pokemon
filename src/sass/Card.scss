@@ -1,0 +1,29 @@
+@import '../sass/variables.scss';
+
+.card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    &__image {
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-image: url('https://w0.pngwave.com/png/288/96/pokemon-let-s-go-pikachu-and-let-s-go-eevee-pokemon-go-pikachu-png-clip-art.png');
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 100%;
+    }
+    &__title {
+        margin: 0;
+        padding: 8px 16px;
+        background: linear-gradient(to right top, white 0%,  $red 50% );
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+    }
+}

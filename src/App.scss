@@ -1,0 +1,32 @@
+@import './sass/variables.scss';
+
+.App {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  background-image: url('./images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: $pd-xxl;
+  padding-top: 100px;
+  min-width: 320px;
+}
+
+
+@media (max-width: 768px) {
+  .App {
+    padding: $pd-md;
+    padding-top: 100px;
+    padding-bottom: 48px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .App {
+    padding: $pd-sm;
+    padding-top: 100px;
+    padding-bottom: 48px;
+  }
+}

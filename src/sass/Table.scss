@@ -1,0 +1,34 @@
+@import './variables.scss';
+
+.table {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 18px;
+  &__row {
+    white-space: nowrap;
+    font-family: 'Pokemon';
+    font-size: 24px;
+    text-decoration: none;
+    color: orange;
+    text-align: center;
+    background-image: linear-gradient(to right, transparent, red , white 5%, white 95%, red, transparent);
+    letter-spacing: 3px;
+    &:hover {
+      color: orangered;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .table {
+    padding: $pd-sm;
+    &__row {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: $fs-sm;
+      padding: $pd-sm;
+    }
+  }
+
+}

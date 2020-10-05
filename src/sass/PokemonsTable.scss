@@ -1,0 +1,36 @@
+.pokemons-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__search{
+    height: 50px;
+    width: 30%;
+    padding: 8px;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  &__button {
+    text-transform: uppercase;
+    background-color: goldenrod;
+    padding: 18px 48px;
+    border-radius: 32px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pokemons-table {
+    &__search {
+      width: 100%;
+    }
+  }
+
+}
+

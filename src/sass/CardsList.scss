@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+.cards {
+    margin: 0 auto;
+    max-width: 1280px;
+    position: relative;
+    padding: 48px 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    justify-items: center;
+    grid-row-gap: 24px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .cards {
+    padding: $pd-md;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .cards {
+    padding: $pd-sm;
+  }
+}
