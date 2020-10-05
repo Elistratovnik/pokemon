@@ -9,7 +9,7 @@ function Main() {
   return (
     <main className="main">
       <Switch>
-        <Route exact path='/' component={CardsList}/>
+        <Route exact path='/pokemon' component={CardsList}/>
         <Route exact path='/pokemons' component={PokemonsTable}/>
         <Route path='/about' component={About}/>
         <Route path='/pokemons/:id' component={Pokemon}/>
